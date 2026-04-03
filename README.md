@@ -95,9 +95,9 @@ A API estará disponível em:
 
 http://127.0.0.1:8000
 
-###https://roadmap.sh/projects/expense-tracker-api
-
 Documentação automática:
 
 http://127.0.0.1:8000/docs
+
+### https://roadmap.sh/projects/expense-tracker-api
 
