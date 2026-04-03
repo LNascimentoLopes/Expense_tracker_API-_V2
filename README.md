@@ -25,3 +25,9 @@ Create and manage accounts
 Authenticate securely
 Add, update, delete, and view expenses
 Filter and organize financial data
+
+run:
+ go to the directory
+ use uvicorn main:app --reload
+to test:
+  go to "link"/docs
