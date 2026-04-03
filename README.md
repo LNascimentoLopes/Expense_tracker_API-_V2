@@ -4,30 +4,95 @@ A RESTful Expense Tracker API built with Python and FastAPI, featuring secure us
 
 This project allows users to manage their personal expenses efficiently, with a complete backend system that includes JWT-based authentication, database integration, and structured API endpoints.
 
-🚀 Features
-🔐 User authentication using JWT tokens
-👤 Secure login system
-📊 Full CRUD operations for expenses
-🗄️ Database integration for persistent storage
-⚡ FastAPI-powered high-performance API
-🧩 Clean and modular code structure
-🛠️ Tech Stack
-Python
-FastAPI
-JWT (JSON Web Tokens)
-SQLAlchemy (or your ORM, if different)
-Database (PostgreSQL / SQLite / etc.)
-📌 Overview
+## 🚀 Como rodar o projeto
 
-This API enables users to:
+### 1. Clone o repositório
 
-Create and manage accounts
-Authenticate securely
-Add, update, delete, and view expenses
-Filter and organize financial data
+```bash
+git clone https://github.com/seu-usuario/seu-projeto.git
+cd seu-projeto
+```
 
-run:
- go to the directory
- use uvicorn main:app --reload
-to test:
-  go to "link"/docs
+---
+
+### 2. Crie um ambiente virtual
+
+```bash
+python -m venv .venv
+```
+
+Ative o ambiente:
+
+Linux/Mac:
+
+```bash
+source .venv/bin/activate
+```
+
+Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+---
+
+### 3. Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4. Configure as variáveis de ambiente
+
+Crie um arquivo `.env` na raiz do projeto com base no `.env.example`:
+
+```env
+DATABASE_URL=postgresql://usuario:senha@localhost:5432/expense_tracker
+SECRET_KEY=sua_chave_secreta
+```
+
+---
+
+### 5. Configure o banco de dados
+
+Certifique-se de ter o PostgreSQL instalado e rodando.
+
+Crie o banco de dados:
+
+```sql
+CREATE DATABASE expense_tracker;
+```
+
+---
+
+### 6. Crie as tabelas
+
+Execute o script para criar automaticamente as tabelas no banco:
+
+```bash
+python create_tables.py
+```
+
+---
+
+### 7. Inicie a aplicação
+
+```bash
+uvicorn main:app --reload
+```
+
+---
+
+### ✅ Pronto!
+
+A API estará disponível em:
+
+http://127.0.0.1:8000
+
+Documentação automática:
+
+http://127.0.0.1:8000/docs
+
