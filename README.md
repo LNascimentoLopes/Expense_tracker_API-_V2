@@ -50,8 +50,10 @@ pip install -r requirements.txt
 Crie um arquivo `.env` na raiz do projeto com base no `.env.example`:
 
 ```env
-DATABASE_URL=postgresql://usuario:senha@localhost:5432/expense_tracker
+DATABASE_URL=postgresql://usuario:senha@localhost:5432/nome_do_banco
 SECRET_KEY=sua_chave_secreta
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
 
 ---
