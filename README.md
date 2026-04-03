@@ -4,6 +4,7 @@ A RESTful Expense Tracker API built with Python and FastAPI, featuring secure us
 
 This project allows users to manage their personal expenses efficiently, with a complete backend system that includes JWT-based authentication, database integration, and structured API endpoints.
 
+
 ## 🚀 Como rodar o projeto
 
 ### 1. Clone o repositório
@@ -93,6 +94,8 @@ uvicorn main:app --reload
 A API estará disponível em:
 
 http://127.0.0.1:8000
+
+###https://roadmap.sh/projects/expense-tracker-api
 
 Documentação automática:
 
